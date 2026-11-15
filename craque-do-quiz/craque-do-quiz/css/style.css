@@ -1,0 +1,87 @@
+/* Estilo simples do Craque do Quiz */
+* { box-sizing: border-box; }
+body { margin: 0; background: #0b1711; color: #f4f7f3; font: 16px Arial, sans-serif; line-height: 1.6; }
+a { color: inherit; text-decoration: none; }
+button, input, select, textarea { font: inherit; }
+button { cursor: pointer; }
+[hidden] { display: none !important; }
+:root { --verde: #b9ed63; --painel: #17271e; --borda: #2b4033; --texto: #aebdb2; }
+.container { width: 90%; max-width: 1100px; margin: auto; }
+.site-header { background: #07110c; border-bottom: 1px solid var(--borda); padding: 16px 5%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 5; }
+.brand { font-size: 21px; font-weight: bold; }
+.brand strong, .hero h1 span, .page-heading h1 span, .about-hero h1 span { color: var(--verde); }
+.brand-ball { margin-right: 8px; }
+.main-nav { display: flex; gap: 22px; }
+.main-nav a { color: var(--texto); font-size: 14px; }
+.main-nav a:hover, .main-nav a.active { color: var(--verde); }
+.hero { display: grid; grid-template-columns: 1fr 1fr; gap: 35px; align-items: center; padding: 65px 0; }
+.hero h1, .page-heading h1, .about-hero h1 { font-size: clamp(36px, 5vw, 58px); line-height: 1.08; margin: 15px 0; }
+.hero-copy p, .about-hero p { color: var(--texto); }
+.eyebrow { color: var(--verde); font-size: 12px; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; }
+.hero-art { min-height: 300px; border: 1px solid #426344; border-radius: 22px; background: linear-gradient(145deg, #1b5836, #10251a); display: grid; place-items: center; position: relative; overflow: hidden; }
+.hero-ball { font-size: 125px; }
+.art-label { position: absolute; bottom: 18px; right: 18px; color: var(--verde); font-size: 12px; }
+.hero-actions, .result-actions, .quiz-actions { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; margin-top: 22px; }
+.hero-highlights { display: flex; gap: 12px; margin-top: 28px; }
+.hero-highlights div, .about-card, .category-card { background: var(--painel); border: 1px solid var(--borda); border-radius: 14px; padding: 15px; }
+.hero-highlights strong { display: block; color: var(--verde); font-size: 22px; }
+.hero-highlights span, .hero-note, .section-number { color: var(--texto); font-size: 12px; }
+.btn { border: 0; border-radius: 9px; padding: 12px 20px; font-weight: bold; display: inline-block; }
+.btn-primary { background: var(--verde); color: #14200f; }
+.btn-secondary, .btn-help { background: #294333; color: white; border: 1px solid #45624c; }
+.btn:hover { filter: brightness(1.1); }
+.play-section, .categories-section, .rules-strip, .ranking-main, .about-main, .result-main, .quiz-main { padding-top: 35px; padding-bottom: 55px; }
+.setup-card, .ranking-card, .result-card, .suggestion-card, .quiz-panel { background: var(--painel); border: 1px solid var(--borda); border-radius: 18px; padding: 25px; }
+.section-heading { margin-bottom: 20px; }
+.section-heading h2, .how-section h2 { margin: 5px 0; }
+.setup-form, .suggestion-form { display: grid; grid-template-columns: 1fr 1fr; gap: 17px; }
+.field { display: flex; flex-direction: column; gap: 6px; }
+.field-wide { grid-column: 1 / -1; }
+input, select, textarea { width: 100%; padding: 12px; border-radius: 8px; border: 1px solid #45604c; background: #0d1b13; color: white; }
+.form-error { color: #ff8888; }
+.form-success { color: var(--verde); }
+.category-grid, .about-grid, .result-stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+.category-card h3 { margin: 8px 0 4px; }
+.category-card p, .about-card p { color: var(--texto); font-size: 14px; }
+.category-icon, .about-icon { font-size: 28px; }
+.rules-strip { display: flex; justify-content: space-between; align-items: center; gap: 20px; color: var(--texto); }
+.text-link, .back-link { color: var(--verde); }
+.site-footer { border-top: 1px solid var(--borda); padding: 20px 5%; color: var(--texto); font-size: 13px; }
+.footer-inner { display: flex; justify-content: space-between; gap: 15px; }
+.page-heading, .about-hero { padding: 40px 0 25px; }
+.quiz-topline, .quiz-meta, .progress-row, .ranking-toolbar { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+.match-pill, .category-tag, .player-tag { background: #263d2e; border-radius: 20px; padding: 7px 12px; font-size: 13px; }
+.progress-track { height: 9px; background: #304336; border-radius: 10px; overflow: hidden; margin: 10px 0 25px; }
+.progress-fill { height: 100%; background: var(--verde); width: 0; }
+.question-heading { display: flex; justify-content: space-between; align-items: center; gap: 20px; }
+.question-heading h1 { font-size: 26px; }
+.timer { text-align: center; background: #0d1b13; border: 1px solid var(--borda); border-radius: 12px; padding: 10px 17px; min-width: 85px; }
+.timer strong { display: block; color: var(--verde); font-size: 25px; }
+.timer small { color: var(--texto); }
+.answers-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 20px; }
+.answers-grid button { text-align: left; padding: 15px; border: 1px solid #45604c; border-radius: 10px; background: #203528; color: white; }
+.answers-grid button:hover { border-color: var(--verde); }
+.feedback { color: var(--texto); }
+.quiz-note, .storage-note { color: var(--texto); margin-top: 18px; }
+.ranking-table { width: 100%; border-collapse: collapse; }
+.ranking-table th, .ranking-table td { padding: 12px; text-align: left; border-bottom: 1px solid var(--borda); }
+.ranking-table th { color: var(--verde); }
+.table-wrap { overflow-x: auto; }
+.result-card { text-align: center; }
+.result-trophy { font-size: 55px; }
+.score-number { color: var(--verde); font-size: 48px; font-weight: bold; }
+.result-detail { color: var(--texto); }
+.result-stats { grid-template-columns: repeat(3, 1fr); margin: 20px 0; }
+.result-stats div { background: #0d1b13; border-radius: 10px; padding: 12px; }
+.empty-state { text-align: center; color: var(--texto); padding: 25px; }
+.how-list { padding-left: 22px; }
+@media (max-width: 700px) {
+  .site-header { align-items: flex-start; gap: 12px; flex-direction: column; }
+  .main-nav { gap: 16px; }
+  .hero { grid-template-columns: 1fr; padding: 40px 0; }
+  .hero-art { min-height: 220px; }
+  .category-grid, .about-grid { grid-template-columns: 1fr 1fr; }
+  .setup-form, .suggestion-form, .answers-grid { grid-template-columns: 1fr; }
+  .question-heading, .rules-strip { align-items: flex-start; flex-direction: column; }
+  .footer-inner { flex-direction: column; }
+}

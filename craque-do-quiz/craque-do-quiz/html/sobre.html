@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Craque do Quiz | Sobre</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/common.js" defer></script>
+  <script src="../js/sobre.js" defer></script>
+</head>
+<body>
+  <header class="site-header"><a class="brand" href="index.html"><span class="brand-ball">⚽</span><span>Craque <strong>do Quiz</strong></span></a><nav class="main-nav" aria-label="Navegação principal"><a href="index.html">Início</a><a href="ranking.html">Ranking</a><a class="active" href="sobre.html">Sobre</a></nav></header>
+  <main class="container about-main">
+    <section class="about-hero"><span class="eyebrow">Muito além dos 90 minutos</span><h1>Conhecimento também<br>entra em <span>campo.</span></h1><p>O Craque do Quiz é um projeto acadêmico que transforma a paixão pelo futebol em um desafio de perguntas, aprendizado e competição saudável.</p></section>
+    <section class="about-grid">
+      <article class="about-card"><span class="about-icon">🎯</span><h2>Objetivo</h2><p>Testar conhecimentos sobre futebol de forma simples e divertida, usando recursos fundamentais do desenvolvimento web.</p></article>
+      <article class="about-card"><span class="about-icon">💻</span><h2>Tecnologias</h2><p>HTML para estruturar as páginas, CSS para o visual responsivo e JavaScript para controlar o quiz e salvar os resultados.</p></article>
+      <article class="about-card"><span class="about-icon">👨‍🎓</span><h2>Autor</h2><p><strong>Arthur Oliveira Silva</strong><br>Projeto Final — Desenvolvimento Front-end.</p></article>
+    </section>
+    <section class="how-section"><div><span class="eyebrow">Como funciona</span><h2>As regras da partida</h2></div><ol class="how-list"><li><span>01</span><div><strong>Monte sua partida</strong><p>Informe seu nome, escolha uma categoria e selecione a dificuldade.</p></div></li><li><span>02</span><div><strong>Responda no tempo</strong><p>Você terá 15 segundos por pergunta. Respostas rápidas valem pontos extras.</p></div></li><li><span>03</span><div><strong>Use sua ajuda</strong><p>A ferramenta 50/50 remove duas alternativas incorretas uma vez por partida.</p></div></li><li><span>04</span><div><strong>Entre para o ranking</strong><p>Ao terminar, sua pontuação é salva no ranking deste navegador.</p></div></li></ol></section>
+    <section class="suggestion-card"><div class="suggestion-intro"><span class="eyebrow">Participe do projeto</span><h2>Tem uma pergunta<br>para o nosso quiz?</h2><p>Envie uma sugestão. Ela ficará registrada neste navegador para consulta do desenvolvedor.</p></div><form id="suggestion-form" class="suggestion-form"><div class="field"><label for="suggestion-category">Categoria</label><select id="suggestion-category" required><option value="" selected disabled>Selecione</option><option value="copa">Copa do Mundo</option><option value="brasileiros">Futebol Brasileiro</option><option value="jogadores">Jogadores e Lendas</option><option value="regras">Regras e Curiosidades</option></select></div><div class="field"><label for="suggestion-question">Sua pergunta</label><textarea id="suggestion-question" rows="3" maxlength="250" placeholder="Digite a pergunta sugerida..." required></textarea></div><div class="field"><label for="suggestion-answer">Resposta correta</label><input id="suggestion-answer" type="text" maxlength="120" placeholder="Qual é a resposta?" required></div><button class="btn btn-primary" type="submit">Enviar sugestão <span>→</span></button><p class="form-success" id="suggestion-status" role="status"></p></form></section>
+  </main>
+  <footer class="site-footer"><div class="container footer-inner"><span>⚽ Craque do Quiz</span><span>Feito para quem vive futebol.</span></div></footer>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Craque do Quiz | Partida</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/common.js" defer></script>
+  <script src="../js/perguntas.js" defer></script>
+  <script src="../js/quiz.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html"><span class="brand-ball">⚽</span><span>Craque <strong>do Quiz</strong></span></a>
+    <nav class="main-nav" aria-label="Navegação principal"><a href="index.html">Início</a><a href="ranking.html">Ranking</a><a href="sobre.html">Sobre</a></nav>
+  </header>
+
+  <main class="container quiz-main">
+    <div class="quiz-topline"><a class="back-link" href="index.html">← Sair da partida</a><span class="match-pill"><span class="live-dot"></span> Partida em andamento</span></div>
+    <section class="quiz-panel" aria-labelledby="question-text">
+      <div class="quiz-meta"><span class="category-tag" id="quiz-category">Categoria</span><span class="player-tag">Jogador: <strong id="quiz-player">—</strong></span></div>
+      <div class="progress-row"><span id="question-counter">Pergunta 1 de 10</span><span id="progress-percent">10%</span></div>
+      <div class="progress-track"><div class="progress-fill" id="progress-fill"></div></div>
+      <div class="question-heading">
+        <div><span class="eyebrow">Valendo pontos</span><h1 id="question-text">Carregando pergunta...</h1></div>
+        <div class="timer" id="timer" aria-live="off"><span>⏱</span><strong id="timer-value">15</strong><small>segundos</small></div>
+      </div>
+      <div class="answers-grid" id="answers" aria-label="Alternativas"></div>
+      <div class="quiz-actions"><button class="btn btn-help" id="help-button" type="button">✂ Ajuda 50/50 <span class="help-count">1 uso</span></button><p id="feedback" class="feedback" aria-live="polite">Escolha uma alternativa para marcar seu ponto.</p></div>
+    </section>
+    <div class="quiz-note"><span>⚽</span> Responda rápido: quanto menos tempo usar, maior pode ser sua pontuação!</div>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-inner"><span>⚽ Craque do Quiz</span><span>Boa sorte na partida!</span></div></footer>
+</body>
+</html>

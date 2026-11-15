@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Teste seus conhecimentos sobre futebol no Craque do Quiz.">
+  <title>Craque do Quiz | Início</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/common.js" defer></script>
+  <script src="../js/inicio.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Craque do Quiz - página inicial">
+      <span class="brand-ball">⚽</span><span>Craque <strong>do Quiz</strong></span>
+    </a>
+    <nav class="main-nav" aria-label="Navegação principal">
+      <a class="active" href="index.html">Início</a>
+      <a href="ranking.html">Ranking</a>
+      <a href="sobre.html">Sobre</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div class="hero-copy">
+        <span class="eyebrow"><span class="live-dot"></span> O desafio começa aqui</span>
+        <h1>Você conhece<br>mesmo <span>futebol?</span></h1>
+        <p>Mostre que entende do jogo! Responda, some pontos e conquiste seu lugar entre os craques.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#comecar">Montar minha partida <span>→</span></a>
+          <span class="hero-note">6 perguntas · 15 segundos por questão</span>
+        </div>
+        <div class="hero-highlights">
+          <div><strong>04</strong><span>categorias</span></div>
+          <div><strong>03</strong><span>dificuldades</span></div>
+          <div><strong>06</strong><span>perguntas por partida</span></div>
+        </div>
+      </div>
+      <div class="hero-art" aria-label="Ilustração de uma bola de futebol em um campo">
+        <div class="field-lines"></div>
+        <div class="hero-ball">⚽</div>
+        <span class="art-label">A bola está com você!</span>
+      </div>
+    </section>
+
+    <section class="container play-section" id="comecar">
+      <div class="section-heading">
+        <div><span class="eyebrow">Sua vez de jogar</span><h2>Prepare-se para o desafio</h2></div>
+        <span class="section-number">01 / 03</span>
+      </div>
+      <div class="setup-card">
+        <form id="start-form" class="setup-form">
+          <div class="field field-wide">
+            <label for="player-name">Como podemos chamar você?</label>
+            <input type="text" id="player-name" name="playerName" placeholder="Digite seu nome" maxlength="20" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="category">Escolha uma categoria</label>
+            <select id="category" name="category" required>
+              <option value="" disabled selected>Selecione uma categoria</option>
+              <option value="copa">Copa do Mundo</option>
+              <option value="brasileiros">Clubes e Campeonatos Brasileiros</option>
+              <option value="jogadores">Jogadores e Lendas</option>
+              <option value="regras">Regras e Curiosidades</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="difficulty">Nível de dificuldade</label>
+            <select id="difficulty" name="difficulty" required>
+              <option value="facil">Fácil</option>
+              <option value="medio" selected>Médio</option>
+              <option value="dificil">Difícil</option>
+            </select>
+          </div>
+          <div class="form-footer field-wide">
+            <p><span class="small-icon">⏱</span> Você terá 15 segundos para responder cada pergunta.</p>
+            <button class="btn btn-primary" type="submit">Começar partida <span>→</span></button>
+          </div>
+          <p class="form-error field-wide" id="form-error" role="alert"></p>
+        </form>
+      </div>
+    </section>
+
+    <section class="container categories-section">
+      <div class="section-heading">
+        <div><span class="eyebrow">Quatro caminhos para a vitória</span><h2>Escolha seu campo</h2></div>
+      </div>
+      <div class="category-grid">
+        <article class="category-card category-world"><span class="category-icon">🏆</span><h3>Copa do Mundo</h3><p>Histórias, seleções e momentos que marcaram o maior torneio do planeta.</p></article>
+        <article class="category-card category-brazil"><span class="category-icon">🇧🇷</span><h3>Futebol Brasileiro</h3><p>Clubes, títulos e campeonatos que fazem parte da nossa paixão.</p></article>
+        <article class="category-card category-legends"><span class="category-icon">⭐</span><h3>Jogadores e Lendas</h3><p>Craques históricos, ídolos e grandes nomes dos gramados.</p></article>
+        <article class="category-card category-rules"><span class="category-icon">📋</span><h3>Regras e Curiosidades</h3><p>As regras do jogo e fatos que todo torcedor deveria conhecer.</p></article>
+      </div>
+    </section>
+
+    <section class="container rules-strip">
+      <div><span class="rules-icon">📣</span><div><h2>Regras do jogo</h2><p>6 perguntas por partida · 15 segundos por pergunta · pontos extras por rapidez · uma ajuda 50/50.</p></div></div>
+      <a class="text-link" href="sobre.html">Saiba mais <span>→</span></a>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-inner"><span>⚽ Craque do Quiz</span><span>Projeto acadêmico · HTML, CSS e JavaScript</span></div></footer>
+</body>
+</html>

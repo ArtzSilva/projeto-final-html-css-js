@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Craque do Quiz | Ranking</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/common.js" defer></script>
+  <script src="../js/ranking.js" defer></script>
+</head>
+<body>
+  <header class="site-header"><a class="brand" href="index.html"><span class="brand-ball">⚽</span><span>Craque <strong>do Quiz</strong></span></a><nav class="main-nav" aria-label="Navegação principal"><a href="index.html">Início</a><a class="active" href="ranking.html">Ranking</a><a href="sobre.html">Sobre</a></nav></header>
+  <main class="container ranking-main">
+    <div class="page-heading"><span class="eyebrow">Os melhores da rodada</span><h1>Hall dos <span>Craques</span></h1><p>As maiores pontuações registradas neste navegador.</p></div>
+    <section class="ranking-card">
+      <div class="ranking-toolbar"><div><h2>Classificação geral</h2><p id="ranking-count">0 partidas registradas</p></div><div class="field filter-field"><label for="ranking-filter">Filtrar categoria</label><select id="ranking-filter"><option value="todas">Todas as categorias</option><option value="copa">Copa do Mundo</option><option value="brasileiros">Futebol Brasileiro</option><option value="jogadores">Jogadores e Lendas</option><option value="regras">Regras e Curiosidades</option></select></div></div>
+      <div class="table-wrap"><table class="ranking-table"><thead><tr><th>Pos.</th><th>Jogador</th><th>Categoria</th><th>Dificuldade</th><th>Pontos</th></tr></thead><tbody id="ranking-body"></tbody></table></div>
+      <div class="empty-state" id="ranking-empty"><span>🥅</span><h3>O placar ainda está zerado</h3><p>Jogue sua primeira partida e apareça por aqui!</p><a class="btn btn-primary" href="index.html">Começar a jogar</a></div>
+      <p class="storage-note">O ranking usa o localStorage e fica salvo somente neste navegador e dispositivo.</p>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="container footer-inner"><span>⚽ Craque do Quiz</span><span>Quem será o próximo líder?</span></div></footer>
+</body>
+</html>
